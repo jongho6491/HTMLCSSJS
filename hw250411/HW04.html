@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>레이아웃 버튼 과제</title>
+
+    <style>
+      .flexcontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 500px;
+        height: 100px;
+        margin: 100px auto;
+        border: 1px solid black;
+      }
+      .button {
+        padding: 10px 20px;
+        background-color: #eee;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        font-size: 14px;
+        margin: 0 10px;
+        cursor: pointer;
+      }
+      .button:hover {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexcontainer">
+      <div class="button">버튼 1</div>
+      <div class="button">버튼 2</div>
+    </div>
+  </body>
+</html>
