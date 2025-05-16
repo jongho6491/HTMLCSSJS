@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자리 배치도</title>
+    <link rel="stylesheet" href="tableset.css">
+</head>
+<body>
+    <h1 class="container">자리 배치도</h1>
+    <div class="container">
+        <table>
+            <script>
+                // 자리수 입력
+                let total = prompt("자리수를 입력해 주세요");
+                let final = 1;
+                let set = total % 6;
+                
+                if(set != 0){
+                    set = 1;
+                }
+
+                for(let i = 0; i < (total/6)+set; i++){
+                    document.write(`<tr>`)
+                        for(let j = final; j <= 6 * i; j++){
+                            if(j <= total){
+                                document.write(`<td>좌석 ${j}</td>`)
+                            }else{
+                                document.write(`<td></td>`)
+                            }
+                            final = j+1;
+                        }
+                    document.write(`</td>`)
+                }
+            </script>
+        </table>
+    </div>
+</body>
+</html>
